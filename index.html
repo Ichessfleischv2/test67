@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family:Poppins,sans-serif;
+    background:linear-gradient(135deg,#1e1e2f,#2b5876);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.form-container{
+    width:380px;
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:15px;
+    color:white;
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+input,textarea,select,button{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+}
+
+button{
+    background:#00d4ff;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.status{
+    text-align:center;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+<img class="logo"
+src="https://cdn.discordapp.com/attachments/1425305534063579220/1516131972760469605/FB_IMG_1781544413041.jpg">
+
+<h2>Registration</h2>
+
+<form id="regForm">
+
+<input id="name" placeholder="Full Name" required>
+<input id="age" type="number" placeholder="Age" required>
+<textarea id="address" placeholder="Address" required></textarea>
+<input id="email" type="email" placeholder="Email" required>
+
+<select id="course" required>
+<option value="">Course</option>
+<option>BSIT</option>
+<option>CoED</option>
+<option>HM</option>
+<option>TM</option>
+</select>
+
+<select id="year" required>
+<option value="">Year</option>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+<button type="submit">Submit</button>
+
+<div class="status" id="status"></div>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
